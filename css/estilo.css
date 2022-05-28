@@ -1,5 +1,7 @@
 /* Este sitio fue desarrollado por Saint Girons Juan Pablo (C12) y Salas Costa Luna Bianca (C11), grupo 131 */
 
+/**********************************************MOBILE FIRST************************************************/
+
 body{
     display: flex;
     flex-direction: column;
@@ -7,13 +9,6 @@ body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
-article{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 50px;
-}
- 
 header h1 a{
     display: flex;
     justify-content: center;
@@ -25,30 +20,42 @@ nav{
     height: 50px;
     width: 100%;
     background: #c3a6f8;
+    display: grid;
+    grid-template:  repeat(4, 1fr);
 }
 
-ul{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    padding-top: 13px;
-    list-style: none;
-    font-size: 20px;
+.logo-menu{
+    max-width: 20%;
+    max-height: 70%;
 }
-ul li img{
-    width: 120px;
+
+.img-menu{
+    margin: 5px;
+    height: 2.5em;
 }
+
 
 ul li a{
-    text-decoration: none;
+    /* text-decoration: none;
     padding: 15px;
-    width: 33%;
+    width: 33%; */
+    visibility: hidden;
 }
 
-ul li a:hover{
-    color: #ebabcb;
-    background-color: #7448c5;
+
+
+
+.div_imagenes{
+    display: flex;
+    justify-content: center;
 }
+
+
+
+/**********************INDEX*************************INDEX*****************************************INDEX**********************/
+    
+
+
 
 ol{
     display: block;
@@ -75,18 +82,14 @@ p{
     padding-bottom: 30px;
 }
 
+
 .div_comida{
     margin: 30px;
     background-color: rgb(230, 230, 230);
     border-radius: 10%;
 }
 
-.div_imagenes{
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-}
+
 
 h3 {
     font-size: 1.50em;
@@ -96,10 +99,11 @@ h3 {
 }
 
 .imagenes_comida{
-    height: 100%;
     object-fit: contain;
-}
+} 
 
+
+ 
 footer{
     width: 100%;
     background: #c3a6f8;
@@ -133,7 +137,11 @@ footer p{
     outline: solid 3px #EAA75F;
 }
 
-/********************************************/
+
+
+
+
+/************************FORM**************************************FORM**********************************************************FORM**********/
 
 #captcha {
     font-size: 30px;
@@ -202,8 +210,11 @@ h5{
     height: 50px;
 }
 
-/*--------------------------------------------------------------------------------------------------------*/
-h2{
+
+ /****************************TABLE*****************************************TABLE***********************************************TABLE*******************/
+
+
+ h2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,6 +231,191 @@ table tr td{
 }
 
 .tabla{
-    margin: 20px;
-    margin-bottom: 51px;
+    margin: 20px 0px;
+    /* margin-bottom: 70%; */
+}
+
+
+
+
+
+
+/*****************************RESPONSIVE TO DESKTOP*******************************RESPONSIVE TO DESKTOP**************************************RESPONSIVE TO DESKTOP***********************************/
+
+@media only screen and (min-width: 500px){
+
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    header h1 a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }  
+        
+    nav{
+        height: 50px;
+        width: 100%;
+        background: #c3a6f8;
+    }
+    
+    ul{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        padding-top: 13px;
+        list-style: none;
+        font-size: 20px;
+    }
+    ul li img{
+        width: 120px;
+    }
+    
+    ul li a{
+        text-decoration: none;
+        padding: 15px;
+        width: 33%;
+        visibility: visible;
+    }
+    
+    ul li a:hover{
+        color: #ebabcb;
+        background-color: #7448c5;
+    }
+    
+
+    ol{
+        display: block;
+        font-size: 17px;
+        border: 2px solid #777;
+        margin-left: 30px;
+        width: 25%;
+    }
+    
+    ol li{
+        margin: 17px 25px;
+    }
+    
+    ol li a{
+        text-decoration: none;
+        padding: 7px;
+        
+    }
+    
+    p{
+        margin: 30px;
+        font-size: 20px;
+        text-indent: 15px;
+        padding-bottom: 30px;
+    }
+
+
+    .div_imagenes{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    
+    /************************FORM**************************************FORM**********************************************************FORM**********/
+    
+
+    /* #captcha {
+        font-size: 30px;
+        background-color: rgb(176, 185, 223);
+        font-weight: bold;
+        border: 1px solid black;
+        color: aqua;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    
+    }
+    
+    h5{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 20px auto;
+        font-size: large;
+        font-family: fantasy;
+        border: 2px solid #EAA75F;
+        padding: 10px;
+    }
+    
+    .article-form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .forms-register {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px auto;
+        width: 400px;
+        padding: 30px;
+        margin: 50px;
+        background-color: beige;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .forms-register h4 {
+        font-size: 30px;
+        margin: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        
+    }
+    
+    .forms-register input {
+        
+        padding: 12px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(196, 123, 238);
+    
+    }
+    
+    .submit {
+        width: 100px;
+        height: 50px;
+    } */
+    
+    /****************************TABLE*****************************************TABLE***********************************************TABLE*******************/
+   
+   
+    h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    
+    
+    table tr th{
+        border: 2px solid #ebabcb;
+    }
+    
+    table tr td{
+        border: 2px solid #ebabcb;
+    }
+    
+    .tabla{
+        margin: 20px;
+        margin-bottom: 51px;
+    }
+
 }
