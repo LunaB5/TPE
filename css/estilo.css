@@ -34,11 +34,13 @@ nav{
     height: 2.5em;
 }
 
+.btn-menu{
+    border: none;
+    height: 3.125em;
+    background-color: #c3a6f8;
+}
 
 ul li a{
-    /* text-decoration: none;
-    padding: 15px;
-    width: 33%; */
     visibility: hidden;
 }
 
@@ -288,6 +290,9 @@ table tr td{
         background-color: #7448c5;
     }
     
+    .logo-menu{
+        display: none;
+    }
 
     ol{
         display: block;
