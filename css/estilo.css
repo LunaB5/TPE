@@ -13,6 +13,7 @@ header h1 a{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     
 }  
     
@@ -40,12 +41,28 @@ nav{
     background-color: #c3a6f8;
 }
 
-ul li a{
+.barra{
     visibility: hidden;
 }
 
+ul.barra.show{
+    display: flex;
+    visibility: visible;
+    flex-direction: column;
+    background-color: #c3a6f8;
+    width: 30%;
+    padding-left: 5px;
+    z-index: 10;
+    border-radius: 5%;
+}
 
+ul.barra.show li{
+    padding: 5px;
+}
 
+ul.barra.show li a{
+    text-decoration: none;
+}
 
 .div_imagenes{
     display: flex;
@@ -109,7 +126,7 @@ h3 {
 footer{
     width: 100%;
     background: #c3a6f8;
-    height: 65px;
+    height: 70px;
     font-size:larger;
     display: flex;
     flex-direction: row;
@@ -118,9 +135,9 @@ footer{
 footer p{
     color: rgb(255, 255, 255);
     width: 100%;
-    margin: auto 17px;
     display: flex;
     align-items: center;
+    padding-top: 3px;
 }
 
 .redes{
@@ -149,8 +166,8 @@ footer p{
     font-size: 30px;
     background-color: rgb(176, 185, 223);
     font-weight: bold;
-    border: 1px solid black;
-    color: aqua;
+    border: 1px solid #000000;
+    color: #00ffff;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -184,11 +201,11 @@ h5{
     flex-direction: column;
     justify-content: center;
     margin: 0px auto;
-    width: 400px;
+    /* width: 400px; */
     padding: 30px;
     margin: 50px;
-    background-color: beige;
-    color: black;
+    background-color: #f5f5dc;
+    color: #000000;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -213,7 +230,7 @@ h5{
 }
 
 
- /****************************TABLE*****************************************TABLE***********************************************TABLE*******************/
+ /****************************CONTANTO*****************************************CONTANTO***********************************************CONTANTO*******************/
 
 
  h2{
@@ -363,23 +380,13 @@ table tr td{
         flex-direction: column;
         align-items: center;
         margin: auto;
-    }
+    } */
     
     .forms-register {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0px auto;
-        width: 400px;
-        padding: 30px;
-        margin: 50px;
-        background-color: beige;
-        color: black;
-        font-family: Arial, Helvetica, sans-serif;
+        width: 450px;
     }
     
-    .forms-register h4 {
+    /* .forms-register h4 {
         font-size: 30px;
         margin: 25px;
         font-family: 'Times New Roman', Times, serif;
@@ -399,7 +406,7 @@ table tr td{
         height: 50px;
     } */
     
-    /****************************TABLE*****************************************TABLE***********************************************TABLE*******************/
+    /****************************CONTANTO*****************************************CONTANTO***********************************************CONTANTO*******************/
    
    
     h2{
