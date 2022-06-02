@@ -32,15 +32,3 @@ function validarCaptcha(e) {
 }
 
 aleatorio();
-
-
-let btn_menu = document.querySelector("#boton-menu");
-
-btn_menu.addEventListener("click", menuResponsive);
-
-function menuResponsive() {
-    // alert("Sip");
-
-    document.querySelector(".barra").classList.toggle("show")
-
-}

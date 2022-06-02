@@ -50,7 +50,7 @@ ul.barra.show{
     visibility: visible;
     flex-direction: column;
     background-color: #c3a6f8;
-    width: 30%;
+    width: 55%;
     padding-left: 5px;
     z-index: 10;
     border-radius: 5%;
@@ -58,22 +58,16 @@ ul.barra.show{
 
 ul.barra.show li{
     padding: 5px;
+    font-size: 33px;
 }
 
 ul.barra.show li a{
     text-decoration: none;
 }
 
-.div_imagenes{
-    display: flex;
-    justify-content: center;
-}
-
-
 
 /**********************INDEX*************************INDEX*****************************************INDEX**********************/
     
-
 
 
 ol{
@@ -81,7 +75,7 @@ ol{
     font-size: 17px;
     border: 2px solid #777;
     margin-left: 30px;
-    width: 25%;
+    width: 80%;
 }
 
 ol li{
@@ -91,7 +85,6 @@ ol li{
 ol li a{
     text-decoration: none;
     padding: 7px;
-    
 }
 
 p{
@@ -101,14 +94,16 @@ p{
     padding-bottom: 30px;
 }
 
-
 .div_comida{
     margin: 30px;
     background-color: rgb(230, 230, 230);
     border-radius: 10%;
 }
 
-
+.div_imagenes{
+    display: flex;
+    justify-content: center;
+}
 
 h3 {
     font-size: 1.50em;
@@ -201,7 +196,6 @@ h5{
     flex-direction: column;
     justify-content: center;
     margin: 0px auto;
-    /* width: 400px; */
     padding: 30px;
     margin: 50px;
     background-color: #f5f5dc;
@@ -241,46 +235,39 @@ h5{
 }
 
 
-table tr th{
+.tabla_contacto tr th{
     border: 2px solid #ebabcb;
 }
 
-table tr td{
+.tabla_contacto tr td{
     border: 2px solid #ebabcb;
 }
 
-.tabla{
+.tabla_contacto{
     margin: 20px 0px;
-    /* margin-bottom: 70%; */
 }
 
+.div_contacto{
+    overflow: auto;
+    width: 100%;
+}
 
-
+.article_contacto{
+    height: 80vh;
+}
 
 
 
 /*****************************RESPONSIVE TO DESKTOP*******************************RESPONSIVE TO DESKTOP**************************************RESPONSIVE TO DESKTOP***********************************/
 
-@media only screen and (min-width: 500px){
+
+@media only screen and (min-width: 480px){
 
     article{
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-top: 50px;
-    }
-
-    header h1 a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }  
-        
-    nav{
-        height: 50px;
-        width: 100%;
-        background: #c3a6f8;
     }
     
     ul{
@@ -312,122 +299,33 @@ table tr td{
     }
 
     ol{
-        display: block;
-        font-size: 17px;
-        border: 2px solid #777;
-        margin-left: 30px;
         width: 25%;
     }
-    
-    ol li{
-        margin: 17px 25px;
-    }
-    
-    ol li a{
-        text-decoration: none;
-        padding: 7px;
-        
-    }
-    
-    p{
-        margin: 30px;
-        font-size: 20px;
-        text-indent: 15px;
-        padding-bottom: 30px;
-    }
-
 
     .div_imagenes{
         width: 100%;
         height: 400px;
-        display: flex;
-        justify-content: center;
     }
     
 
     
     /************************FORM**************************************FORM**********************************************************FORM**********/
     
-
-    /* #captcha {
-        font-size: 30px;
-        background-color: rgb(176, 185, 223);
-        font-weight: bold;
-        border: 1px solid black;
-        color: aqua;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 5px;
-    
-    }
-    
-    h5{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        margin: 20px auto;
-        font-size: large;
-        font-family: fantasy;
-        border: 2px solid #EAA75F;
-        padding: 10px;
-    }
-    
-    .article-form{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-    } */
-    
     .forms-register {
         width: 450px;
     }
-    
-    /* .forms-register h4 {
-        font-size: 30px;
-        margin: 25px;
-        font-family: 'Times New Roman', Times, serif;
-        
-    }
-    
-    .forms-register input {
-        
-        padding: 12px;
-        margin-bottom: 10px;
-        border: 1px solid rgb(196, 123, 238);
-    
-    }
-    
-    .submit {
-        width: 100px;
-        height: 50px;
-    } */
+
     
     /****************************CONTANTO*****************************************CONTANTO***********************************************CONTANTO*******************/
    
-   
-    h2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10px;
+    
+    .div_contacto{
+        width: 100%;
     }
-    
-    
-    table tr th{
-        border: 2px solid #ebabcb;
-    }
-    
-    table tr td{
-        border: 2px solid #ebabcb;
-    }
-    
-    .tabla{
-        margin: 20px;
+    .tabla_contacto{
+        margin: 20px auto;
         margin-bottom: 51px;
+        width: 80%;
     }
 
 }
