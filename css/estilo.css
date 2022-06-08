@@ -87,11 +87,25 @@ ol li a{
     padding: 7px;
 }
 
-p{
+.p_comida{
     margin: 30px;
     font-size: 20px;
     text-indent: 15px;
     padding-bottom: 30px;
+}
+
+.p_footer{
+    margin: 13px;
+    font-size: 17px;
+    text-indent: 15px;
+    display: flex;
+    padding-bottom: 7px;
+    margin-left: -5px;
+}
+
+p time{
+    display: flex;
+    margin: -5px;
 }
 
 .div_comida{
@@ -145,6 +159,7 @@ footer p{
 
 .img_redes{
     margin: 10px;
+    margin-left: -7px;
 }
 
 .img_redes:hover{
@@ -241,6 +256,11 @@ h5{
 
 .tabla_contacto tr td{
     border: 2px solid #ebabcb;
+}
+
+.celda_contacto{
+    text-align: center;
+    font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .tabla_contacto{
