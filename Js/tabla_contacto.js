@@ -1,39 +1,35 @@
 "use strict";
 
-function crearContacto(){
-    const socialMedia = [
-        {
-            Nombre : "Luna",
-            Intagram : "InstaLuna",
-            Facebook : "FacebookLuna",
-            Linkedin : "LinkedinLuna"
-        },
-        {
-            Nombre : "Pablo",
-            Intagram : "InstaPablo",
-            Facebook : "Facebookpablo",
-            Linkedin : "LinkedinPablo"
-        }
-    ];
+let btn = document.querySelector(".add");
+let btnDel = document.querySelector(".delete");
+let btnTres = document.querySelector(".tres");
+let tbody = document.querySelector("tbody");
+let thead = document.querySelector("thead");
+let rec = document.querySelector("#Receta");
+let ing = document.querySelector("#Ingredientes");
+let tiempo = document.querySelector("#Tiempo");
+let dif = document.querySelector("#Dificultad");
 
-    let tabla_contacto = document.querySelector(".tbody_contacto");
-
-    let i=0;
-
-        while(i<socialMedia.length){
-            const fila = document.createElement("tr"); 
-            tabla_contacto.append(fila);
-    
-            for(let k in socialMedia[i]){
-                const celda = document.createElement('td');
-                let contenido = document.createTextNode(`${socialMedia[i][k]}`);
-                fila.appendChild(celda);
-                celda.appendChild(contenido);
-                celda.classList.add("celda_contacto")
-            }
-
-            i++
-        }
+let recetas =[
+    {
+        Recetas: "Recetas",
+        Ingredientes:"Ingredientes",    
+        Tiempo :"Tiempo",   
+        Dificultad:"Dificultad"
+    }
+]; 
+window.onload = function(){
+    thead.innerHTML = "<th>"+recetas.Recetas+"</th>"+"<th>"+recetas.Ingredientes+"</th>"+"<th>"+recetas.Tiempo+"</th>"+"<th>"+recetas.Dificultad+"</th>"
 }
-
-crearContacto();
+btn.addEventListener('click', function(e){
+    e.preventDefault();
+    tbody.innerHTML += "<tr>"+"<th>"+rec.value+"</th>"+"<th>"+ing.value+"</th>"+"<th>"+tiempo.value+"</th>"+"<th>"+dif.value+"</th>"
+})
+btnDel.addEventListener('click', function (){
+    tbody.innerHTML = "";
+})
+btnTres.addEventListener('click', function (){
+    tbody.innerHTML += "<tr>"+"<th>"+rec.value+"</th>"+"<th>"+ing.value+"</th>"+"<th>"+tiempo.value+"</th>"+"<th>"+dif.value+"</th>"+"<th>"
+    tbody.innerHTML += "<tr>"+"<th>"+rec.value * 2 +"</th>"+"<th>"+ing.value * 2 +"</th>"+"<th>"+tiempo.value * 2 +"</th>"+"<th>"+dif.value+"</th>"+"<th>"
+    tbody.innerHTML += "<tr>"+"<th>"+rec.value * 3 +"</th>"+"<th>"+ing.value * 3 +"</th>"+"<th>"+tiempo.value * 3 +"</th>"+"<th>"+dif.value+"</th>"+"<th>"
+})
