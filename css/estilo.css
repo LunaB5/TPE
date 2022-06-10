@@ -347,5 +347,10 @@ h5{
         margin-bottom: 51px;
         width: 80%;
     }
+    .form_contacto{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
 
 }

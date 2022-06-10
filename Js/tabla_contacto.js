@@ -10,14 +10,14 @@ let ing = document.querySelector("#Ingredientes");
 let tiempo = document.querySelector("#Tiempo");
 let dif = document.querySelector("#Dificultad");
 
-let recetas =[
+let recetas =
     {
         Recetas: "Recetas",
         Ingredientes:"Ingredientes",    
         Tiempo :"Tiempo",   
         Dificultad:"Dificultad"
-    }
-]; 
+    };
+
 window.onload = function(){
     thead.innerHTML = "<th>"+recetas.Recetas+"</th>"+"<th>"+recetas.Ingredientes+"</th>"+"<th>"+recetas.Tiempo+"</th>"+"<th>"+recetas.Dificultad+"</th>"
 }
